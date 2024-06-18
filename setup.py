@@ -25,7 +25,7 @@ setuptools.setup(
 
     # packages for code and data
     packages=setuptools.find_packages(),
-    package_data={'shennong': ['share/bottleneck/*', 'share/crepe/*']},
+    package_data={'shennong': ['share/bottleneck/*', 'share/crepe/model-tiny.h5']},
 
     # binaries
     entry_points={'console_scripts': [

@@ -100,10 +100,11 @@ with warnings.catch_warnings():
 # preptrained models stored as a global variable
 _MODELS = {
     'tiny': None,
-    'small': None,
-    'medium': None,
-    'large': None,
-    'full': None}
+    # 'small': None,
+    # 'medium': None,
+    # 'large': None,
+    # 'full': None
+}
 
 
 def _build_and_load_model(model_capacity):

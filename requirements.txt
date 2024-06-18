@@ -1,0 +1,7 @@
+scipy<2
+sox
+pydub
+h5features
+json_tricks
+joblib
+hmmlearn

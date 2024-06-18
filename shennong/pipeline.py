@@ -286,10 +286,10 @@ class _Parallel(joblib.Parallel):
         self.name = name
         self.log = log
 
-    def _print(self, msg, msg_args):
+    def _print(self, msg):
         if not self.verbose:  # pragma: nocover
             return
-        msg = (msg % msg_args).replace('Done', 'done')
+        msg = msg.replace('Done', 'done')
         self.log.info('%s: %s', self, msg)
 
     def __repr__(self):
