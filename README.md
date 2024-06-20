@@ -19,8 +19,18 @@ most of the algorithms while providing simple to use **Python API** and
 * See the detailed installation procedure
   [here](https://docs.cognitive-ml.fr/shennong/installation.html). On
   Linux, simply have a:
+  ```bash
+  # https://anaconda.org/samx81/ezai-pykaldi
+  # build by using https://github.com/samx81/pykaldi-conda-package
+  conda install samx81::ezai-pykaldi  -c intel -c conda-forge
 
-        conda install -c coml -c conda-forge shennong
+  # To avoid `'GLIBCXX_3.4.XX' not found`
+  conda install -c conda-forge libstdcxx-ng=12
+  # or download from https://anaconda.org/conda-forge/libstdcxx-ng/files cuz conda solving sometimes sucks
+
+  pip install -r requirements.txt
+  pip install wheel/shennong-1.0-py3-none-any.whl
+  ```
 
 * Implementented models include filterbanks, MFCC, PLP, bottleneck, pitch,
   delta, CMVN, VAD, VTLN. See the complete list of available features
