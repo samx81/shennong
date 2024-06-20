@@ -130,7 +130,7 @@ class CmvnPostProcessor(FeaturesPostProcessor):
                 raise ValueError(
                     'stats must be an array of shape {}, but is shaped as {}'
                     .format((2, self.dim+1), stats.shape))
-            self._cmvn.stats = kaldi.matrix.SubMatrix(stats)
+            self._cmvn.stats = kaldi.matrix.DoubleMatrix(stats)
 
     @property
     def name(self):
